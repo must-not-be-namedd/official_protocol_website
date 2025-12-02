@@ -2458,5 +2458,10 @@ header, nav {
   font-weight: 300;
   font-size: 1.1rem;
 }
+.game-card {
+  padding: 0rem 0rem;   /* Removes huge empty gap next to the image */
+  display: flex;
+  gap: 0rem;
+}
 
 
