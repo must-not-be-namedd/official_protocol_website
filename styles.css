@@ -1932,7 +1932,7 @@ body {
 
 /* Core Team Page Responsive Styles */
 .core-section {
-  padding: 5rem 0;
+  padding: 0rem 0;
   position: relative;
   overflow: hidden;
   background: var(--dark-bg);
@@ -2301,10 +2301,91 @@ body {
   width: auto;
   object-fit: contain;
 }
+@media (max-width: 600px) {
+    body {
+        padding-top: 0px;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        padding-top: 0;
+    }
+}
+@media (max-width: 600px) {
+  .contact-page {
+      padding-top: 40px;  /* modify value */
+  }
+}
+/* Reduce top space only for events and synergy pages */
+body.events-page,
+body.synergy-page {
+    margin-top: 0px !important;   /* remove or reduce space */
+    padding-top: 0px !important;
+}
 
+/* If nav bar spacing is fixed height, adjust here if needed */
+.events-page .navbar,
+.synergy-page .navbar {
+    margin-bottom: 0 !important;
+}
+/* ----------------------------------------------
+   PAGE-SPECIFIC TOP SPACING FOR FIXED NAVBAR
+   ---------------------------------------------- */
 
+/* DEFAULT (all pages) — If you want, keep hero-section padding */
+main, .hero-section, section {
+  scroll-margin-top: 100px;
+}
 
+/* 🔵 EVENTS PAGE — reduce space */
+body.events-page main,
+body.events-page .events-hero {
+  margin-top: 0px !important;   /* reduce */
+  padding-top: 0% !important;
+}
 
+/* 🔵 SYNERGY PAGE — reduce space */
+body.synergy-page main,
+body.synergy-page .synergy-hero {
+  margin-top: 0px !important;   /* reduce */
+  padding-top: 70px !important;
+}
 
+/* 🟢 CONTACT PAGE — increase space */
+body.contact-page main,
+body.contact-page .contact-hero,
+body.contact-page section:first-of-type {
+  margin-top: 140px !important;   /* add extra top spacing */
+  padding-top: 0 !important;
+}
+/* Reduce gap below navbar */
+header, nav {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
+/* Reduce padding at top of the events section */
+.events-section {
+    margin-top: 0 !important;
+    padding-top: 5px !important;
+}
+
+/* Reduce margin on the heading */
+.events-section h2,
+.past-events-title,
+#past-events-title {
+    margin-top: 5px !important;
+    padding-top: 0 !important;
+}
+
+/* If still too much gap, force it with negative margin */
+@media (max-width: 768px) {
+    .events-section,
+    .events-section h2 {
+        margin-top: -10px !important;
+    }
+}
+.events-section h2 {
+    margin-top: -15px !important;
+}
 
