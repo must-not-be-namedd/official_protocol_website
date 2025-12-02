@@ -215,7 +215,7 @@ body {
   bottom: 10px;
   /* Lowered the wave */
   pointer-events: none;
-  height: 270px;
+  height: 180px;
   /* Slightly increased height */
   z-index: 1;
 }
@@ -1448,7 +1448,7 @@ body {
 }
 
 .nav-logo {
-  height: 48px;
+  height: 70px;
   /* adjust as needed */
   width: auto;
   display: block;
