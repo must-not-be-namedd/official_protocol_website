@@ -596,7 +596,7 @@ body {
 }
 
 .about-content {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .about-box {
@@ -2267,7 +2267,40 @@ body {
   width: auto;
   object-fit: contain;
 }
+/* Prevent content overlap under fixed navbar */
+body {
+  padding-top: 100px;
+}
 
+@media (max-width: 600px) {
+  body {
+    padding-top: 130px;
+  }
+}
+
+/* Lock logo and keep it visually consistent */
+.navbar-brand img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+/* Prevent content overlap under fixed navbar */
+body {
+  padding-top: 100px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 130px;
+  }
+}
+
+/* Lock logo and keep it visually consistent */
+.navbar-brand img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
 
 
 
