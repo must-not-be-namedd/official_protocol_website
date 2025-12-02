@@ -2405,7 +2405,7 @@ header, nav {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
 
   /* REMOVE HUGE PADDING */
-  padding: 1.5rem;
+  padding: 2rem;
   align-items: center;
 }
 
@@ -2459,9 +2459,37 @@ header, nav {
   font-size: 1.1rem;
 }
 .game-card {
-  padding: 0rem 0rem;   /* Removes huge empty gap next to the image */
+  padding: 1rem 1rem;   /* Removes huge empty gap next to the image */
   display: flex;
   gap: 0rem;
 }
+/* Desktop & laptop only */
+/* Desktop & laptop only for index.html */
+@media (min-width: 993px) {
+    body.index-page {
+        padding-top: 80px;      /* slightly more top padding for index page */
+    }
 
+    body.index-page main {
+        padding-top: 90px;      /* main content padding */
+    }
+
+    body.index-page .hero {
+        padding-top: 140px;     /* hero aligned nicely with wave */
+    }
+}
+/* Desktop & laptop only */
+@media (min-width: 993px) {
+    body {
+        padding-top: 10;      /* remove extra top padding */
+    }
+
+    main {
+        padding-top: 0;      /* remove main top padding */
+    }
+
+    .hero {
+        padding-top: 0;      /* remove hero top padding */
+    }
+}
 
