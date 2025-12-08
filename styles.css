@@ -2495,4 +2495,6 @@ header, nav {
 .featured-heading .featured-condensed {
   font-family: 'Delicious Handrawn', cursive !important;
 }
-
+.about-box .about-box-title {
+  color: #E1CCD3 !important;
+}
