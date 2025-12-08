@@ -2498,25 +2498,3 @@ header, nav {
 .about-box .about-box-title {
   color: #E1CCD3 !important;
 }
-@media (max-width: 768px) {
-  body.about-page main,
-  body.about-page .about-hero {
-    padding-top: 4000% !important;  /* adjust as needed */
-  }
-}
-@media (max-width: 768px) {
-  body.about-page h1 {
-    margin-top: 400px !important; /* adjust the value as needed */
-  }
-}
-@media (max-width: 768px) {
-  body.about-page h1,
-  body.events-page h1 {
-    margin-top: 40px !important; /* adjust as needed */
-  }
-}
-@media (max-width: 768px) {
-  .about-title {
-    margin-top: 90px !important;
-  }
-}
