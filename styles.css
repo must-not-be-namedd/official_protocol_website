@@ -616,7 +616,7 @@ body {
 
   color: #E1CCD3;
   background-clip: text;
-  
+
 }
 
 /* ---------------------------
@@ -2159,68 +2159,82 @@ body {
 
 
 @media (max-width: 768px) {
-    body {
-        padding-top: 100px;
-    }
+  body {
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 480px) {
-    body {
-        padding-top: 100px;
-    }
+  body {
+    padding-top: 100px;
+  }
 }
+
 .nav-open body {
-    padding-top: 220px;   /* larger padding when menu is open */
+  padding-top: 220px;
+  /* larger padding when menu is open */
 }
+
 main {
-    padding-top: 110px;
+  padding-top: 110px;
 }
+
 .hero {
-    padding-top: 160px;
+  padding-top: 160px;
 }
 
 @media (max-width: 992px) {
-    .hero {
-        padding-top: 180px;
-    }
+  .hero {
+    padding-top: 180px;
+  }
 }
 
 @media (max-width: 768px) {
-    .hero {
-        padding-top: 120px;
-    }
+  .hero {
+    padding-top: 120px;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero {
-        padding-top: 200px;
-    }
+  .hero {
+    padding-top: 200px;
+  }
 }
+
 .hero-main {
-    line-height: 1.05; 
+  line-height: 1.05;
 }
 
 .hero-main .handwritten {
-    padding-bottom: 15px;   /* allows 'y' to extend */
+  padding-bottom: 15px;
+  /* allows 'y' to extend */
 }
 
 .hero-inner {
-    overflow: visible;
+  overflow: visible;
 }
+
 .featured-heading {
-  white-space: nowrap;      /* forces one line */
-  display: flex;            /* keeps spans aligned horizontally */
-  align-items: baseline;    /* aligns text nicely */
-  gap: 0.4rem;              /* spacing between Past & Events */
+  white-space: nowrap;
+  /* forces one line */
+  display: flex;
+  /* keeps spans aligned horizontally */
+  align-items: baseline;
+  /* aligns text nicely */
+  gap: 0.4rem;
+  /* spacing between Past & Events */
 }
 
 .featured-hand,
 .featured-condensed {
-  display: inline-block;     /* ensures styling but on same line */
+  display: inline-block;
+  /* ensures styling but on same line */
 }
+
 .featured-condensed {
   display: inline-block !important;
 }
+
 /* Mobile adjustments only */
 .btn-contact {
   background: var(--muted-pink);
@@ -2229,6 +2243,7 @@ main {
   padding: 0.5rem 1.25rem;
   font-weight: 700;
 }
+
 /* MOBILE FIX — center cards & remove uneven side spacing */
 @media (max-width: 600px) {
 
@@ -2246,10 +2261,13 @@ main {
   .member-card {
     margin-left: auto;
     margin-right: auto;
-    width: 92%;        /* makes the card slightly bigger */
-    max-width: 360px;  /* prevents oversizing */
+    width: 92%;
+    /* makes the card slightly bigger */
+    max-width: 360px;
+    /* prevents oversizing */
   }
 }
+
 /* Prevent content overlap under fixed navbar */
 body {
   padding-top: 100px;
@@ -2267,6 +2285,7 @@ body {
   width: auto;
   object-fit: contain;
 }
+
 /* Prevent content overlap under fixed navbar */
 body {
   padding-top: 100px;
@@ -2284,6 +2303,7 @@ body {
   width: auto;
   object-fit: contain;
 }
+
 /* Prevent content overlap under fixed navbar */
 body {
   padding-top: 100px;
@@ -2301,53 +2321,64 @@ body {
   width: auto;
   object-fit: contain;
 }
+
 @media (max-width: 600px) {
-    body {
-        padding-top: 0px;
-    }
+  body {
+    padding-top: 0px;
+  }
 }
+
 @media (max-width: 600px) {
-    body {
-        padding-top: 0;
-    }
+  body {
+    padding-top: 0;
+  }
 }
+
 @media (max-width: 600px) {
   .contact-page {
-      padding-top: 40px;  /* modify value */
+    padding-top: 40px;
+    /* modify value */
   }
 }
+
 /* Reduce top space only for events and synergy pages */
 body.events-page,
 body.synergy-page {
-    margin-top: 0px !important;   /* remove or reduce space */
-    padding-top: 0px !important;
+  margin-top: 0px !important;
+  /* remove or reduce space */
+  padding-top: 0px !important;
 }
 
 /* If nav bar spacing is fixed height, adjust here if needed */
 .events-page .navbar,
 .synergy-page .navbar {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
+
 /* ----------------------------------------------
    PAGE-SPECIFIC TOP SPACING FOR FIXED NAVBAR
    ---------------------------------------------- */
 
 /* DEFAULT (all pages) — If you want, keep hero-section padding */
-main, .hero-section, section {
+main,
+.hero-section,
+section {
   scroll-margin-top: 100px;
 }
 
 /* 🔵 EVENTS PAGE — reduce space */
 body.events-page main,
 body.events-page .events-hero {
-  margin-top: 0px !important;   /* reduce */
+  margin-top: 0px !important;
+  /* reduce */
   padding-top: 0% !important;
 }
 
 /* 🔵 SYNERGY PAGE — reduce space */
 body.synergy-page main,
 body.synergy-page .synergy-hero {
-  margin-top: 0px !important;   /* reduce */
+  margin-top: 0px !important;
+  /* reduce */
   padding-top: 70px !important;
 }
 
@@ -2355,39 +2386,45 @@ body.synergy-page .synergy-hero {
 body.contact-page main,
 body.contact-page .contact-hero,
 body.contact-page section:first-of-type {
-  margin-top: 140px !important;   /* add extra top spacing */
+  margin-top: 140px !important;
+  /* add extra top spacing */
   padding-top: 0 !important;
 }
+
 /* Reduce gap below navbar */
-header, nav {
-    margin-bottom: 0;
-    padding-bottom: 0;
+header,
+nav {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Reduce padding at top of the events section */
 .events-section {
-    margin-top: 0 !important;
-    padding-top: 5px !important;
+  margin-top: 0 !important;
+  padding-top: 5px !important;
 }
 
 /* Reduce margin on the heading */
 .events-section h2,
 .past-events-title,
 #past-events-title {
-    margin-top: 5px !important;
-    padding-top: 0 !important;
+  margin-top: 5px !important;
+  padding-top: 0 !important;
 }
 
 /* If still too much gap, force it with negative margin */
 @media (max-width: 768px) {
-    .events-section,
-    .events-section h2 {
-        margin-top: -10px !important;
-    }
+
+  .events-section,
+  .events-section h2 {
+    margin-top: -10px !important;
+  }
 }
+
 .events-section h2 {
-    margin-top: -15px !important;
+  margin-top: -15px !important;
 }
+
 .games-section {
   margin-top: 2rem;
 }
@@ -2395,7 +2432,8 @@ header, nav {
 /* FIXED GAME CARD */
 .game-card {
   display: flex;
-  gap: 2rem; /* space between image + text */
+  gap: 2rem;
+  /* space between image + text */
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
   border-radius: 16px;
   overflow: hidden;
@@ -2421,7 +2459,8 @@ header, nav {
 /* BIGGER IMAGE */
 .game-img {
   width: 100%;
-  max-width: none; /* allow full width */
+  max-width: none;
+  /* allow full width */
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
@@ -2438,7 +2477,8 @@ header, nav {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* better spacing between title & text */
+  gap: 1rem;
+  /* better spacing between title & text */
 }
 
 /* TITLE */
@@ -2458,43 +2498,245 @@ header, nav {
   font-weight: 300;
   font-size: 1.1rem;
 }
+
 .game-card {
-  padding: 1rem 1rem;   /* Removes huge empty gap next to the image */
+  padding: 1rem 1rem;
+  /* Removes huge empty gap next to the image */
   display: flex;
   gap: 0rem;
 }
+
 /* Desktop & laptop only */
 /* Desktop & laptop only for index.html */
 @media (min-width: 993px) {
-    body.index-page {
-        padding-top: 80px;      /* slightly more top padding for index page */
-    }
+  body.index-page {
+    padding-top: 80px;
+    /* slightly more top padding for index page */
+  }
 
-    body.index-page main {
-        padding-top: 90px;      /* main content padding */
-    }
+  body.index-page main {
+    padding-top: 90px;
+    /* main content padding */
+  }
 
-    body.index-page .hero {
-        padding-top: 140px;     /* hero aligned nicely with wave */
-    }
+  body.index-page .hero {
+    padding-top: 140px;
+    /* hero aligned nicely with wave */
+  }
 }
+
 /* Desktop & laptop only */
 @media (min-width: 993px) {
-    body {
-        padding-top: 10;      /* remove extra top padding */
-    }
+  body {
+    padding-top: 10;
+    /* remove extra top padding */
+  }
 
-    main {
-        padding-top: 0;      /* remove main top padding */
-    }
+  main {
+    padding-top: 0;
+    /* remove main top padding */
+  }
 
-    .hero {
-        padding-top: 0;      /* remove hero top padding */
-    }
+  .hero {
+    padding-top: 0;
+    /* remove hero top padding */
+  }
 }
+
 .featured-heading .featured-condensed {
   font-family: 'Delicious Handrawn', cursive !important;
 }
+
 .about-box .about-box-title {
   color: #E1CCD3 !important;
+}
+
+/* ===========================
+   NOTES PAGE STYLING
+=========================== */
+
+.notes-main {
+  padding-top: 160px;
+  padding-bottom: 60px;
+}
+
+.notes-title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(140deg, #CFA5B2, #620E36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.notes-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 50px;
+  font-family: "Josefin Sans";
+}
+
+/* Year label */
+.notes-year-title {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  background: -webkit-linear-gradient(140deg, #ffffff, #620E36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Semester layout: side-by-side */
+.notes-sem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 60px;
+}
+
+/* Semester card */
+.semester-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 20px;
+  border: 2px solid transparent;
+  transition: 0.25s ease;
+}
+
+.semester-card:hover {
+  border-color: #d8a6b6;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.45);
+}
+
+/* Toggle button */
+.semester-toggle {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #f4dbe2;
+  font-size: 1.5rem;
+  font-family: "Antonio";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sem-arrow {
+  font-size: 1.2rem;
+  transition: 0.25s ease;
+}
+
+.semester-card.open .sem-arrow {
+  transform: rotate(180deg);
+}
+
+/* Subjects grid */
+.subjects-grid {
+  display: none;
+  margin-top: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.semester-card.open .subjects-grid {
+  display: grid !important;
+}
+
+/* Subject card (like core member cards) */
+.subject-card {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Josefin Sans";
+  color: #f3e9ec;
+  border: 2px solid transparent;
+  transition: 0.25s ease;
+}
+
+.subject-card:hover {
+  border-color: #d8a6b6;
+  transform: translateY(-6px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+  .notes-sem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subjects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Mobile responsiveness for Notes Grid */
+@media (max-width: 992px) {
+  .notes-sem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subjects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Leaderboard High Contrast Fix */
+.leaderboard-table th,
+.leaderboard-table td {
+  color: #69153f !important;
+  font-weight: 600;
+}
+
+.leaderboard-table thead th {
+  color: #7f1f3a !important;
+  font-weight: 700;
+  border-bottom: 2px solid #d8a6b6;
+}
+
+.leaderboard-table tbody tr {
+  border-bottom: 1px solid rgba(240, 226, 226, 0.1);
+}
+
+.leaderboard-table .rank-1,
+.leaderboard-table .rank-2,
+.leaderboard-table .rank-3 {
+  color: #69153f !important;
+  font-weight: 800;
+}
+
+/* Mobile Fix for Events Page Header Spacing */
+@media (max-width: 768px) {
+  .events-hero {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+}
+
+/* Fix for 'Come back tomorrow' text visibility */
+#day-display,
+#final-score,
+.text-muted-pink {
+  color: #d8a6b6 !important;
+}
+
+.daily-footer-msg {
+  color: #e9d8de !important;
+  opacity: 0.9;
+  font-weight: 300;
 }
