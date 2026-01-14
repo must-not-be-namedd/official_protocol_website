@@ -60,3 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".semester-toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const card = btn.parentElement;
+      const grid = card.querySelector(".subjects-grid");
+
+      card.classList.toggle("open");
+
+      grid.style.display =
+        grid.style.display === "grid" ? "none" : "grid";
+    });
+  });
+});
+
